@@ -283,17 +283,17 @@ class ContentImporter {
       if (!$store) {
         $store = $store_storage->create([
           'type' => 'online',
-          'name' => 'US Store',
+          'name' => 'BR Store',
           'mail' => 'admin@example.com',
-          'default_currency' => 'USD',
+          'default_currency' => 'BRL',
           'address' => [
-            'country_code' => 'US',
-            'administrative_area' => 'SC',
-            'locality' => 'Greenville',
-            'postal_code' => '29616',
-            'address_line1' => '12344 24th St',
+            'country_code' => 'BR',
+            'administrative_area' => 'SP',
+            'locality' => 'Osasco',
+            'postal_code' => '06020194',
+            'address_line1' => 'Rua dos comerciantes',
           ],
-          'billing_countries' => ['US'],
+          'billing_countries' => ['BR'],
           'prices_include_tax' => FALSE,
         ]);
         $store->save();
